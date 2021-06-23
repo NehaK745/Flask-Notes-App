@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+{% block title %}
+{% endblock %} {% block content
+    %}
+    <form action="/sign-up" method="post">
+        
+        <h3 align="center">Sign Up</h3>
+        <br />
+        <div class="form-group">
+            <input autocomplete="off" id="firstName" autofocus class="form-control" name="firstName" placeholder="First Name" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" id = "email" name="email" placeholder="email" type="email">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password1"  id="password1" placeholder="Password" type="password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password2"  id="password2" placeholder="Confirm-Password" type="password">
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+        <p>Register or <a href='/login'>login</a> already have an account</p><br>
+    </form>
+{% endblock %}
